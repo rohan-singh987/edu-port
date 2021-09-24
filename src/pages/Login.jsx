@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 import './Login.css'
 
 const Login = () => {
@@ -6,12 +7,16 @@ const Login = () => {
         <div>
          <div className="head">
          <img src="/images/2.0.png" alt="" />
-            <button className="btn">Login</button>
+            
+         <Link to="/Home"><button className="btn">Login </button></Link>
+            
+            
+
         </div>
         <Container>
             <Content>
                 <CTA>    
-                    {/* <CTALogoOne src="https://www.brixwelllimited.com/images/khan-academy.png" alt="" /> */}
+                    <CTALogoOne src="" alt="" />
                     <SignUp>Click For Future</SignUp>
                         <Description>
                             One Stop For All Your Courses Need
@@ -48,6 +53,7 @@ const CTA = styled.div`
 
 
 const CTALogoOne = styled.img`
+// background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://www.brixwelllimited.com/images/khan-academy.png")
     width: 400px;
     margin-bottom: 12px;
 //   max-width: 600px;
